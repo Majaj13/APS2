@@ -21,48 +21,16 @@
         <h1> Psychoquiz </h1>
     </header>
     <body>
-        <h2> Plutot SLAM ou SISR </h2>
-        <h4> Êtes vous prêt à savoir quel option vous convient le mieux ? </h4>
-        
-        <?php 
-        require('../back_end/include/_inc_parametres.php'); 
-        require('../back_end/include/_inc_connexion.php');
-
-        $cnx=new pdo("mysql:host=localhost;dbname=aps2;charset=utf8", "root", "");
-
-        $resultat = $cnx->prepare('SELECT nom FROM origine');
-
-        $resultat->execute();
-
-        $origines = $resultat->fetchAll();
-       ?>
-
-        <form action="../back_end/sonde.php" method="POST">
-        <div class="centrer">
-            <button type="button" class="etablissementOrigine" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" name="IDORIGINE"> Etude d'origine
-                <span class="caret"></span>
-            </button>
-            <ul class="dropdown-menu speOrigine">
-                <?php foreach ($origines as $origin): ?>
-                    <li>
-                    <?= $origin ['nom'] ?>
-                    </li>
-                <?php endforeach; ?>
-            </ul>
-        </div>
-
-        <div class="centrer">
-            <label>Sexe :</label>
-            <input type="radio" id="F" name="sexe" value="F" class="sexe"/>
-            <label for="Feminin">Féminin</label>
-            <input type="radio" id="M" name="sexe" value="M" class="sexe"/>
-            <label for="Masculin">Masculin</label>
-        </div>
-            <div class="centrer">
-                <button type="submit" name="submit" class="demarrer" href="">Démarrer</button>
-            </div>
-        </form>
-        <footer class="text-center text-lg-start bg-white ">
+        <h2>Votre score est de 60 points en SLAM</h2>
+        <img src="../assets/images/dev.jpg" class="imageFin" alt="">
+        <h3>Un.e vrai SLAMiste.</h3>
+        <h3>Inventez votre petit monde en c#, tout en étant, attirer par le Python qui sommeille au fond de votre disque dur.</h3>
+        <h3>Vous danseriez tout aussi bien sur un air de Java pour développer votre site web. Vous pourriez passer des nuits à coder et ne compter pas vos heures pour débusquer le bug, le moindre indice et le temps glisse sur vous.</h3>
+        <h3>En équipe, c’est toujours plus agile.</h3>
+        <h3>Votre patience est légendaire derrière votre écran, difficile de vous en extraire. Bon, quelquefois, votre code est sur un autre domaine que l’informatique : le commerce, la gestion des emplois du temps,…</h3>
+        <h3>Face à des utilisateurs un peu hackers ou pas dégourdis, vous pouvez être perfectionniste pour éviter les bugs de saisie. Et avec, tout cela, vous avez encore le temps de voir les nouveautés qui pourraient améliorer votre pratique.</h3>
+    </body>
+    <footer class="text-center text-lg-start bg-white ">
             <div class = "section2">
                 <div class="p-4" style="background-color: rgba(0, 0, 0, 0.025);">
                     © 2023 Copyright: TreizeOrganisé
