@@ -20,25 +20,24 @@ try {
     $id_admin = $_POST['id_admin'];
     $mdp_admin = $_POST['mdp_admin'];
 
-    // Si le mot de passe réponds à isValidMDP alors on continue sinon message d'erreur
+    // Si le mot de passe répond à isValidMDP alors on continue sinon message d'erreur
 
     if (!isValidMDP($mdp_admin)) {
-      echo "Le mot de passe doit contenir au moins une majuscule, une minuscule, un chiffre, un caractère spécial et être d'au moins 8 caractères.";
+      echo "Le mot de passe doit contenir au moins une majuscule, une minuscule, un chiffre, un caractère spécial et au moins 8 caractères !";
       exit();
     }
 
     // Requête SQL afin de vérifier les données de connexion
 
-    $query = "SELECT * FROM admins WHERE id_admin=:id_admin AND mdp_admin=:mdp_admin";
+    $query = "SELECT * FROM admins WHERE id_admin=:id_admin";
     $stmt = $cnx->prepare($query);
     $stmt->bindParam(':id_admin', $id_admin);     //bindParam pour éviter les injections SQL
-    $stmt->bindParam(':mdp_admin', $mdp_admin);
     $stmt->execute();
-    $result = $stmt->fetchAll();
+    $result = $stmt->fetch(PDO::FETCH_ASSOC);
 
     // Vérification du résultat
 
-    if (count($result) == 1) {
+    if ($result && password_verify($mdp_admin, $result['mdp_admin'])) {  // Vérification du hash
 
       // Connexion réussie et redirection vers la page suivante
 
