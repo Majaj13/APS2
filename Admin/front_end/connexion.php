@@ -25,15 +25,41 @@ if(isset ($_POST ['envoi'])){
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Connexion</title>
+    <title>APS2</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/png" href="../assets/images/Logo-FLD.png" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../../assets/css/main.css" />
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Maël Merrer">
+    <meta name="description" content="Page d'acceuil psychoquiz">
+    <meta name="keywords" content="Acceuil, site, psychoquiz, le goat plassart">
 </head>
+<header>
+    <div class = "section1" >
+        <img src="../assets/images/Logo-FLD.png" class="img-responsive" alt="">
+    </div>
+    <h1> Psychoquiz </h1>
+</header>
 <body>
     <form method="POST" action="">
-      <input type="text" name="pseudo" autocomplete="off">
-      <br>
-      <input type="password" name="mdp" autocomplete="off"> <br><br>
-      <input type="submit" name="envoi"> 
+    <div class="centrer">
+        <input type="text" name="pseudo" autocomplete="off" class="demarrer">
+        <br>
+        <input type="password" name="mdp" autocomplete="off" class="demarrer">
+        <br>
+        <button type="submit" name="submit" class="demarrer" href="">Démarrer</button>
+    </div>
     </form>
 </body>
+<footer class="text-center text-lg-start bg-white ">
+    <div class = "section2">
+        <div class="p-4" style="background-color: rgba(0, 0, 0, 0.025);">
+            © 2023 Copyright: TreizeOrganisé
+        </div>
+    </div>
+</footer>
 </html>

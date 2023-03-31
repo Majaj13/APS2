@@ -9,11 +9,10 @@
         $annee = date("Y");
 
         $stmt = $cnx->prepare("INSERT INTO sonde (IDORIGINE, SEXE, ANNEE) VALUES (:IDORIGINE, :sexe, :annee)");
-
-        $stmt->execute(array(':IDORIGINE' => $IDORIGINE, ':sexe' => $sexe, ':annee' => $annee));
-
-        $stmts = $stmt->fetchAll();
-
+        $stmt->bindParam(':IDORIGINE', $IDORIGINE);
+        $stmt->bindParam(':sexe', $sexe);
+        $stmt->bindParam(':annee', $annee);
+        $stmt->execute();
     }
     header("Location: ../front_end/quiz.php");
     exit();
