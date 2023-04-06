@@ -23,47 +23,14 @@
     <body>
         <h2> Plutot SLAM ou SISR </h2>
         <h4> Êtes vous prêt à savoir quel option vous convient le mieux ? </h4>
-        
-        <?php 
-        require('../back_end/include/_inc_parametres.php'); 
-        require('../back_end/include/_inc_connexion.php');
 
-        $cnx=new pdo("mysql:host=localhost;dbname=aps2;charset=utf8", "root", "");
-
-        $resultat = $cnx->prepare('SELECT nom FROM origine');
-
-        $resultat->execute();
-
-        $origines = $resultat->fetchAll();
-       ?>
-
-        <form action="../back_end/sonde.php" method="POST">
-        <div class="centrer">
-            <button type="button" class="etablissementOrigine" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" name="IDORIGINE"> Etude d'origine
-                <span class="caret"></span>
-            </button>
-            <ul class="dropdown-menu speOrigine">
-                <?php foreach ($origines as $origin): ?>
-                    <li>
-                    <?= $origin ['nom'] ?>
-                    </li>
-                <?php endforeach; ?>
-            </ul>
-        </div>
-
-        <div class="centrer">
-            <label>Sexe :</label>
-            <input type="radio" id="F" name="sexe" value="F" class="sexe"/>
-            <label for="Feminin">Féminin</label>
-            <input type="radio" id="M" name="sexe" value="M" class="sexe"/>
-            <label for="Masculin">Masculin</label>
-        </div>
+        <form action="sondage.php" method="POST">
             <div class="centrer">
                 <button type="submit" name="submit" class="demarrer" href="">Démarrer</button>
             </div>
         </form>
         <footer class="text-center text-lg-start bg-white ">
-            <div class = "section2">
+            <div class = "section3">
                 <div class="p-4" style="background-color: rgba(0, 0, 0, 0.025);">
                     © 2023 Copyright: TreizeOrganisé
                 </div>

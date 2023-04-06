@@ -49,7 +49,9 @@
                 $idtype = $row["IDTYPEQUESTION"];
             }
 
-            $conn = null;
+            $cnx = null;
+
+            // Choisir le bon type de question Type1/Type2
 
             if ($idtype == 1) {
                 $texte = "<label>" . $id_question . " - " . $libelle_question . " ? </label><br>";
@@ -58,7 +60,9 @@
                 $texte .= "<br>";
                 $texte .= '<input type="radio" href="?id=' . $id_question .  '" id="non" name="reponse" value="non" class="ON"/>';
                 $texte .= '<label class="Gauche"> non </label>';
-            } elseif ($idtype == 2) {
+            } 
+            
+            elseif ($idtype == 2) {
                 $texte = "<label>" . $id_question . " - " . $libelle_question . " ? </label>";
                 $texte .= '<form>';
                 $texte .= '<label class="Droite"> Pas du tout</label><input type="radio" name="gradue" value="duTout" class="gradue">';
@@ -69,6 +73,7 @@
                 $texte .= '</form>';
             }
 
+            // Choisir le bon type de bouton Suivant/Terminé
 
             if ($id_question != $max_id) {
                 $texte .= '<form action="quiz.php?' . http_build_query(array("id" => $id_question)) . '" method="post">';
