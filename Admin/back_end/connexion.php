@@ -31,7 +31,7 @@ try {
 
     $query = "SELECT * FROM admins WHERE id_admin=:id_admin";
     $stmt = $cnx->prepare($query);
-    $stmt->bindParam(':id_admin', $id_admin);     //bindParam pour éviter les injections SQL
+    $stmt->bindValue(':id_admin', $id_admin, PDO::PARAM_STR);    //bindParam pour éviter les injections SQL
     $stmt->execute();
     $result = $stmt->fetch(PDO::FETCH_ASSOC);
 
