@@ -1,4 +1,5 @@
 <?php
+session_start();
 
 // Connexion à la BDD
 
@@ -41,9 +42,8 @@ try {
 
       // Connexion réussie et redirection vers la page suivante
 
-      session_start();
       $_SESSION['id_admin'] = $id_admin;
-      header("Location: ../front_end/accueil.html");
+      header("Location: ../front_end/accueil.php");
       exit();
     } else {
 
