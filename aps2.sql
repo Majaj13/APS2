@@ -50,9 +50,10 @@ CREATE TABLE IF NOT EXISTS `avis` (
 --
 
 INSERT INTO `avis` (`IDAVIS`, `TITRE`, `SPE`, `PARAG1`, `PARAG2`, `PARAG3`, `BORNEINF`, `BORNESUP`) VALUES
-(1, 'Totally d?v', '1', 'Un.e vrai SLAMiste. \r\nInventez votre petit monde en c#, tout en ?tant, attirer par le Python qui sommeille au fond de votre disque dur. ', 'Vous danseriez tout aussi bien sur un air de Java pour d?velopper votre site web. Vous pourriez passer des nuits ? coder et ne compter pas vos heures pour d?busquer le bug, le moindre indice et le temps glisse sur vous.\r\n En ?quipe, c?est toujours plus agile. ', 'Votre patience est l?gendaire derri?re votre ?cran, difficile de vous en extraire. Bon, quelquefois, votre code est sur un autre domaine que l?informatique : le commerce, la gestion des emplois du temps,? \r\nFace ? des utilisateurs un peu hackers ou pas d?gourdis, vous pouvez ?tre perfectionniste pour ?viter les bugs de saisie. Et avec, tout cela, vous avez encore le temps de voir les nouveaut?s qui pourraient am?liorer votre pratique.\r\n', 20, 69);
-(2, 'Full réseau', '2', 'Vous vous penchez non pas vers le côté obscur, mais bien vers l\'option SISR !', 'Ne supportant pas de perdre votre temps et étant plutôt impatient votre désir de compléter tous vos services avec directement les bonnes commandes, c\'est cela votre atout.\r\nÊtre à l\'aise avec différents systèmes d\'exploitation et savoir dépanner vos proches quand ils sont au bout de leurs vies lorsque le WiFi est désactivé.', 'Voulant non pas rester toute votre journée derrière votre écran à taper sur votre clavier, vous divaguer un peu partout et surveiller le bon fonctionnement de vos créations.\r\nVous aimez répondre à des demandes de dépannage et venir les résoudre pour le plaisir de l\'autre.', 20, 66),
-(3, 'Mi dev mi réseau', '3', 'Vous bricolez un peu de code pour des bots de jeu ou dépanner la famille.', 'Vous êtes essayée à HTML et CSS parce que c\'est marrant de voir rapidement le résultat de son code mais, pour vos jeux préférés, vous pouvez réfléchir à la meilleure manière d\'exploiter votre PC.', 'Un vrai technophile : vous avalez toutes les innovations techniques. Un peu branleur, try hardeur, vous pouvez vous énerver facilement et vous aimez bien mener votre monde par le bout du nez. Votre idée : c\'est aussi de choisir l\'option où on bosse le moins tout en étant les rois du monde.\r\nLe choix sera dur en décembre !!', 40, 40);
+(1, 'Totally dév', '1', 'Un.e vrai SLAMiste. \r\nInventez votre petit monde en c#, tout en étant, attirer par le Python qui sommeille au fond de votre disque dur. ', 'Vous danseriez tout aussi bien sur un air de Java pour développer votre site web. Vous pourriez passer des nuits à coder et ne compter pas vos heures pour débusquer le bug, le moindre indice et le temps glisse sur vous.\r\n En équipe, c’est toujours plus agile. ', 'Votre patience est légendaire derrière votre écran, difficile de vous en extraire. Bon, quelquefois, votre code est sur un autre domaine que l’informatique : le commerce, la gestion des emplois du temps,… \r\nFace à des utilisateurs un peu hackers ou pas dégourdis, vous pouvez être perfectionniste pour éviter les bugs de saisie. Et avec, tout cela, vous avez encore le temps de voir les nouveautés qui pourraient améliorer votre pratique.\r\n', 20, 1000),
+(2, 'Mi dev mi réseau', '2', 'Vous bricolez un peu de code pour des bots de jeu ou dépanner la famille.  Vous êtes essayé.e à HTML et CSS parce que c’est marrant de voir rapidement le résultat de son code mais, pour vos jeux préférés, vous pouvez réfléchir à la meilleure manière d’exploiter votre PC.', 'Un vrai technophile : vous avalez toutes les innovations techniques. Un peu branleur, try Hardeur, vous pouvez vous énerver facilement et vous aimez bien mener votre monde par le bout du nez. Votre idée : c’est aussi de choisir l’option où on bosse le moins tout en étant les rois du monde.', 'Le choix sera dur en décembre !!',20,20),
+(3, 'Full réseau', '3', 'Vous vous penchez non pas vers le côté obscur, mais bien vers l’option SISR !', 'Ne supportant pas de perdre votre temps et étant plutôt impatient votre désir de compléter tous vos services avec directement les bonnes commandes, c’est cela votre atout. Être à l’aise avec différents systèmes d’exploitation et savoir dépanner vos proches quand ils sont au bout de leurs vies lorsque le WIFI est désactivé.', 'Voulant non pas rester toute votre journée derrière votre écran à taper sur votre clavier, vous aimez divaguer un peu partout et surveiller le bon fonctionnement de vos créations.',20,100);
+
 -- --------------------------------------------------------
 
 --
@@ -115,32 +116,6 @@ INSERT INTO `question` (`IDQUESTION`, `LIBELLE`, `ENJEU`, `IDTYPEQUESTION`, `IDS
 -- --------------------------------------------------------
 
 --
--- Structure de la table `reponseassociee`
---
-
-DROP TABLE IF EXISTS `reponseassociee`;
-CREATE TABLE IF NOT EXISTS `reponseassociee` (
-  `IDQUESTION` smallint(6) DEFAULT NULL,
-  `IDSONDE` smallint(6) DEFAULT NULL,
-  `VALEURRES` smallint(6) DEFAULT '0',
-  `VALEURRDEV` smallint(6) DEFAULT '0'
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
-
---
--- Déchargement des données de la table `reponseassociee`
---
-
-INSERT INTO `reponseassociee` (`IDQUESTION`, `IDSONDE`, `VALEURRES`, `VALEURRDEV`) VALUES
-(1, 1, 0, 0),
-(2, 1, 1, 1),
-(3, 1, 4, 0),
-(4, 1, 4, 0),
-(5, 1, 0, 1),
-(6, 1, 3, 6);
-
--- --------------------------------------------------------
-
---
 -- Structure de la table `scorech`
 --
 
@@ -199,8 +174,10 @@ CREATE TABLE IF NOT EXISTS `sonde` (
   `IDORIGINE` smallint(6) DEFAULT NULL,
   `ANNEE` int(11) DEFAULT '2023',
   `SEXE` char(1) DEFAULT 'M',
+  `CUMULDEV` int(150) DEFAULT '0',
+  `CUMULRES` int(150) DEFAULT '0',
   PRIMARY KEY (`IDSONDE`)
-) ENGINE=MyISAM AUTO_INCREMENT=65 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
@@ -238,7 +215,7 @@ CREATE TABLE IF NOT EXISTS `admins` (
 ) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
 
 --
--- Déchargement des données de la table `admin`
+-- Déchargement des données de la table `admins`
 --
 
 INSERT INTO `admins` (`num_admin`, `id_admin`, `mdp_admin`) VALUES
