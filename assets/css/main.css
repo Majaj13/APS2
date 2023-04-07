@@ -18,6 +18,21 @@ body {
     margin-bottom: 25px;
 }
 
+.section3 {
+  box-sizing: border-box;
+
+    position : fixed;
+    bottom : 0px;
+    left: 0;
+    width: 100%;
+    height: 160px;
+
+    background: #CD7003;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 2px;
+    margin-top: 25px;
+}
+
 .section2 {
     box-sizing: border-box;
 
@@ -81,23 +96,47 @@ body {
 
 
 .demarrer {
-    position: relative;
-    width: 300px;
-    height: 90px;
+  position: relative;
+  width: 300px;
+  height: 90px;
 
-    font-family: 'Inter';
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 38px;
+
+  align-items: center;
+  text-align: center;
+  color: #FFFFFF;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  
+  box-sizing: border-box;
+  background: #CD7003;
+  border: 5px solid #FFFFFF;
+  border-radius: 2px;
+
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+
+.allerAuQuiz {
+    position: relative;
+    width: 450px;
+    height: auto;
+
+    font-family: 'Times New Roman', Times, serif;
     font-style: normal;
-    font-weight: 700;
-    font-size: 38px;
+    font-size: 15px;
 
     align-items: center;
     text-align: center;
-    color: #FFFFFF;
+    color: black;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     
     box-sizing: border-box;
-    background: #CD7003;
-    border: 5px solid #FFFFFF;
+    background: #ffffff;
+    border: 2.5px solid black;
     border-radius: 2px;
 
     margin-top: 25px;
@@ -131,6 +170,14 @@ label[class="Droite"] {
   font-size: 3.5em;
 }
 
+label[class="enH5"] {
+  font-size: 1.5em;
+}
+
+label[class="containerLabel"] {
+  font-size: 1.5em;
+}
+
 :root {
     --form-control-color: orange;
   }
@@ -138,11 +185,12 @@ label[class="Droite"] {
   input[type="radio"].sexe {
     appearance: none;
   
+    background-color: #FFFFFF;
     font: inherit;
     color: currentColor;
-    width: 2.5em;
-    height: 2.5em;
-    border: 0.25em solid currentColor;
+    width: 1.5em;
+    height: 1.5em;
+    border: 0.15em solid #1E1E1E;
     border-radius: 0%;
     transform: translateY(-0.075em);
   
@@ -151,8 +199,8 @@ label[class="Droite"] {
   
   input[type="radio"].sexe::before {
     content: "";
-    width: 2em;
-    height: 2em;
+    width: 1.2em;
+    height: 1.2em;
     border-radius: 0%;
     transform: scale(0);
     transition: 120ms transform ease-in-out;
@@ -222,6 +270,15 @@ label[class="Droite"] {
   
   input[type="radio"].gradue:checked::before {
     transform: scale(1);
+  }
+
+  h5 {
+    font-size: 1.5em;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    margin-top: 25px;
+    margin-bottom: 25px;
   }
 
   h4 {
@@ -305,3 +362,31 @@ label[class="Droite"] {
     margin-top: 100px;
     margin-bottom: 100px;
   }
+
+  .container-origine {
+    width: 750px;
+    height: auto;
+      background-color: #CD7003; 
+      position: relative;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    border-radius: 25px;
+    margin-top: 15%;
+    padding-top: 25px;
+  }
+
+option {
+  color: black;
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+select {
+  padding: 6px 12px;
+  border-radius: 5px;
+  border: none;
+  background-color: rgb(255, 255, 255);
+  width: 300px;
+  color:black;
+}
