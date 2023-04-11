@@ -1,0 +1,147 @@
+body 
+{
+    background-color: #1E1E1E;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
+
+header
+{
+    box-sizing: border-box;
+
+    position:relative;
+    width: auto;
+    height: 160px;
+    
+    background: #CD7003;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 2px;
+    margin-bottom: 25px;
+}
+
+footer
+{
+    box-sizing: border-box;
+    position: fixed;
+    bottom: 0px;
+    left: 0;
+    width: 100%;
+    height: 160px;
+    background: #CD7003;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 2px;
+    margin-top: 25px;
+    text-align : center;
+    padding-top: 25px;
+}
+
+header img 
+{
+    display: block;
+    margin: 5px auto 0 20px;
+    max-height: 90%;
+    max-width: 90%;
+}
+
+.btnQuestions 
+{
+    display: inline-block;
+    padding: 20px 40px;
+    background-color: #CD7003;
+    color: #fff;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 25px;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    border : white solid 5px;
+}
+
+.btnStatistiques 
+{
+    display: inline-block;
+    padding: 20px 40px;
+    background-color: #CD7003;
+    color: #fff;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 25px;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    border : white solid 5px;
+}
+
+.btnQuestions:hover
+{
+    background-color: #f58403;
+}
+
+.btnStatistiques:hover
+{
+    background-color: #f58403;
+}
+
+
+.btnQuestions a
+{
+    color : white;
+    text-decoration: none;
+}
+
+.btnStatistiques a
+{
+    color : white;
+    text-decoration: none;
+}
+
+.btnDeconnexion 
+{
+    display: inline-block;
+    padding: 20px 40px;
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 25px;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    right: -30%;
+    transform: translate(50%, -70%);
+    border: white solid 5px;
+}
+
+.btnDeconnexion a 
+{
+    color : white;
+    text-decoration: none;
+}
+
+.container-connexion
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+	text-align: center;
+}
+
+input
+{
+	height: 30px;
+	width: 250px;
+}
+
+::placeholder
+{
+	text-align: center;
+}
