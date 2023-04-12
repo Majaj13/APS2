@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<!--Titre de la page, description, utilisation d'unicode, importation du css et des images-->
+
+    <head>
+        <title>APS2</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" type="image/png" href="../assets/images/Logo-FLD.png" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="../assets/css/main.css" />
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="author" content="Maël Merrer">
+        <meta name="description" content="Page d'acceuil psychoquiz">
+        <meta name="keywords" content="Acceuil, site, psychoquiz, le goat plassart">
+  </head>
+  <body>
+
+    <!--Création de la banderole du site-->
+    <header>
+        <div class = "section1" >
+          <img src="../assets/images/Logo-FLD.png" class="img-responsive" alt="">
+        </div>
+        <h1> Psychoquiz </h1>
+    </header>
+
+    <!--Création du rectangle central-->
+
+    <div class="container-origine">
+
+    <!--Lien vers le fichier sonde qui va récuper le sexe ect, utilisation de la méthode POST-->
+
+      <form action="../back_end/sonde.php" method="POST">
+
+        <!--Avertissement(RGPD), sexe et origine à selectionner-->
+
+        <h5>Ce sondage est mené à des fins statistiques, merci d’y répondre pour poursuivre. </h5>
+        <div class="centrer">
+          <label class="containerLabel">
+            <input type="radio" name="sexe" value="M" class="sexe" required>   <!--Balise RADIO = 1 choix / Balise CHECKBOX = plusieurs-->
+            Homme
+          </label>
+          <label class="containerLabel">
+            <input type="radio" name="sexe" value="F" class="sexe">
+            Femme
+          </label>
+          <label class="containerLabel">
+            <input type="radio" name="sexe" value="A" class="sexe">
+            Autre
+          </label>
+        </div>
+
+        <!-- Volet déroulant selection origine -->
+
+        <div class="centrer">
+          <label for="select-bac" class="enH5"><h5>Sélectionnez votre bac/université d'origine :</h5></label>
+          <select name="IDORIGINE" id="IDORIGINE" required>
+            <option value="">- Veuillez sélectionner un bac/université -</option>
+            <option value="1">Bac général (NSI)</option>
+            <option value="4">Bac général (Mathématiques)</option>
+            <option value="2">Bac STI2D (SIN)</option>
+            <option value="3">Bac STI2D</option>
+            <option value="6">Bac pro SN (RISC)</option>
+            <option value="8">Bac pro SN</option>
+            <option value="5">Bac STMG</option>
+            <option value="7">Bac pro (Autre)</option>
+            <option value="9">IUT</option>
+            <option value="11">Autre</option>
+          </select>
+        </div>
+
+        <!--Soumettre les informations (sexe et IDORIGINE)-->
+
+        <div class="centrer">
+          <button id="boutonSubmitQuizz" type="submit" name="submit" class="allerAuQuiz">Commencer le PsychoQuizz</button>
+        </div>   
+
+      </form>
+    </div>
+  </body>
+  <footer class="text-center text-lg-start bg-white ">
+        <div class = "section2">
+            <div class="p-4" style="background-color: rgba(0, 0, 0, 0.025);">
+                © 2023 Copyright: TreizeOrganisé
+            </div>
+        </div>
+    </footer>
+</html>
