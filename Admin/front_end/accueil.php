@@ -27,11 +27,11 @@ session_start();
 
         if(isset($_SESSION['id_admin']))
         {
-          echo '<a href="deconnexion.php" class="btnDeconnexion">Deconnexion</a>';
+          echo '<a href="../back_end/logout.php" class="btnDeconnexion">Deconnexion</a>';
         }
         else
         {
-          echo "adieu";
+          echo "";
         }
         var_dump($_SESSION);
         ?>
