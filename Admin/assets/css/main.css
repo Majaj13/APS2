@@ -139,8 +139,9 @@ header img
 
 input
 {
-	height: 30px;
-	width: 250px;
+	height: 35px;
+	width: 300px;
+    border-radius: 10px;
 }
 
 ::placeholder
@@ -254,4 +255,27 @@ a
     border-radius: 10px;
     font-size: 25px;
     padding: 1px;
+}
+
+.btnConnexion
+{
+    padding: 15px 40px;
+    background-color: #CD7003;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 20px;
+    margin: auto;
+    position: absolute;
+    top: 72%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+    border : white solid 4px;
+    text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+}
+
+.btnConnexion:hover
+{
+    background-color: #f58403;
 }
