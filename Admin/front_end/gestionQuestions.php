@@ -16,10 +16,13 @@ session_start();
      <link rel="stylesheet" type="image/png" href="../assets/images/Logo-FLD.png">
      <link rel="icon" type="image/x-icon" href="../assets/images/Logo-FLD.png">
   </head>
+
+  <!-- HEADER -->
   
   <header>
     <img src="../assets/images/Logo-FLD.png" alt="fld">
   </header>
+
   <body>
 
   <div class="titreAdmin">

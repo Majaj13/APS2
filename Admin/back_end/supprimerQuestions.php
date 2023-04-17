@@ -13,7 +13,7 @@ if (isset($_GET['id']))
           FROM question 
           WHERE IDQUESTION = :id_question";  //Supprimer la question selectionné (ligne entière libelle, idtypequestion..;)
   $stmt = $cnx->prepare($sql);
-  $stmt->bindValue(':id_question', $id_question, PDO::PARAM_INT);
+  $stmt->bindValue(':id_question', $id_question, PDO::PARAM_INT);  //Vérifier que id est bien un chiffre
   if ($stmt->execute()) 
   {
     $sql = "SET @count = 0";      //variable mysql afin de numéroter les lignes

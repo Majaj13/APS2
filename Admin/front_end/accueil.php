@@ -25,15 +25,15 @@ session_start();
 
         <?php
 
-        if(isset($_SESSION['id_admin']))
+        if(isset($_SESSION['id_admin']))  //Affichage d'un bouton de deconnexion si PHP détecte qu'une personne est connectée
         {
-          echo '<a href="../back_end/logout.php" class="btnDeconnexion">Deconnexion</a>';
+          echo '<a href="../back_end/logout.php" class="btnDeconnexion">Deconnexion</a>';  //Redirection vers le fichier logout.php qui déconnecte l'administrateur
         }
         else
         {
           echo "";
         }
-        var_dump($_SESSION);
+        var_dump($_SESSION); //Deboguer
         ?>
 
     </header>
