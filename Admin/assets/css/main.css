@@ -112,8 +112,146 @@ header img
     border-radius: 25px;
     margin: auto;
     position: absolute;
+    top: 0%;
+    right: 12%;
+    transform: translate(50%, 30%);
+    border: white solid 5px;
+}
+
+.btnDeconnexion a 
+{
+    color : white;
+    text-decoration: none;
+}
+
+.btnDeconnexion:hover
+{
+    background-color: rgb(26, 26, 26);
+}
+.container-connexion
+{
+    position: absolute;
     top: 50%;
-    left: 40%;
+    left: 50%;
     transform: translate(-50%, -50%);
-    border : white solid 5px;
+	text-align: center;
+}
+
+input
+{
+	height: 30px;
+	width: 250px;
+}
+
+::placeholder
+{
+	text-align: center;
+}
+
+table
+{
+    border-collapse: collapse;
+    width: 80%;
+    border: solid 1px;
+    position: absolute;
+    top: 50%;
+    left: 42%;
+    transform: translate(-50%, -42%);
+    float: left;
+}
+
+th
+{
+    border: solid 1px;
+}
+
+td
+{
+    border: solid 1px;
+    text-align: center;
+}
+
+.titreAdmin h2
+{
+    color: white;
+    stroke: 100% black;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -70%);
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.titreAdmin h3
+{
+    color: white;
+    stroke: 100% black;
+    position: absolute;
+    top: 24%;
+    left: 50%;
+    transform: translate(-50%, -30%);
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.btnAjoutQuestion
+{
+    display: inline-block;
+    padding: 20px 40px;
+    background-color: #CD7003;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    border : white solid 3px;
+    position: absolute;
+    top: 185px;
+    left: auto;
+}
+
+.btnRetourAccueil
+{
+    display: inline-block;
+    padding: 20px 40px;
+    background-color: #CD7003;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    border : white solid 3px;
+    position: absolute;
+    top: 185px;
+    left: 250px; 
+}
+
+a
+{
+    text-decoration: none;
+}
+
+.btnRetourAccueil img
+{
+    position: absolute;
+    top: 50%;
+    left: 52%;
+    transform: translate(-50%, -50%);
+}
+
+.btnSuppQuestion
+{
+    color: rgb(255, 255, 255);
+    background-color: rgb(255, 0, 0);
+    border-radius: 10px;
+    font-size: 25px;
+    padding: 1px;
+}
+
+.btnModifQuestion
+{
+    color: rgb(255, 255, 255);
+    background-color: rgb(255, 154, 3);
+    border-radius: 10px;
+    font-size: 25px;
+    padding: 1px;
 }

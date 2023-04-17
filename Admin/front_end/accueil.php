@@ -53,6 +53,4 @@ session_start();
         © 2023 Copyright: TreizeOrganisé
     </footer>
   </body>
-
-
-
+</html>
