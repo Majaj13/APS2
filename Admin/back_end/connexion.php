@@ -10,7 +10,7 @@ require('../back_end/include/_inc_connexion.php');
 
 function isValidMDP($mdp)
 {
-  return preg_match('/^(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*[;§!@?]).{8,}$/', $mdp); 
+  return preg_match('/^(?!.*[-\'.,\/])^(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*[;§!@?]).{8,}$/', $mdp);  //?= accepte et ?! refus
 }
 
 try 
