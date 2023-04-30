@@ -279,3 +279,78 @@ a
 {
     background-color: #f58403;
 }
+
+/* RD - Connexion Admin */
+
+@media screen and (max-width: 576px)   /* Téléphone */
+{
+    .btnConnexion
+    {
+        font-size: 15px;
+    }
+    header
+    {
+       height: 100px;
+    }
+    footer
+    {
+        height: 100px;
+    }
+}
+@media screen and (max-width: 900px) /* Tablette */
+{
+    .btnConnexion
+    {
+        font-size: 15px;
+    }
+    header
+    {
+       height: 100px;
+    }
+    footer
+    {
+        height: 100px;
+    }
+}
+@media screen and (min-width: 900px)  /* PC normal */
+{
+    .btnConnexion
+    {
+        font-size: 15px;
+    }
+    header
+    {
+       height: 100px;
+    }
+    footer
+    {
+        height: 100px;
+    }
+}
+@media screen and (min-width: 1200px)  /* PC Grand */
+{
+    .btnConnexion
+    {
+        font-size: 35px;
+        top: 66%;
+        left: 50%;
+        transform: translate(-50%, -100%);
+    }
+    header
+    {
+       height: 200px;
+    }
+    footer
+    {
+        height: 200px;
+    }
+    input
+    {
+	   height: 55px;
+	   width: 500px;
+    }
+    body
+    {
+        font-size: 25px;
+    }
+}
