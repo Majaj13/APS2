@@ -296,8 +296,32 @@ a
     {
         height: 100px;
     }
+    .btnDeconnexion
+    {
+        padding: 10px 20px;
+        font-size: 20px;
+        top: 10px;
+        right: 17%;
+        border: white solid 3px;
+    }
+    .btnQuestions
+    {
+       padding: 20px 40px;
+       font-size: 40px;
+       border-radius: 25px;
+       top: 40%;
+       left: 50%;
+    }
+    .btnStatistiques
+    {
+        padding: 20px 28px;
+        font-size: 40px;
+        border-radius: 25px;
+        top: 55%;
+        left: 50%;
+    }
 }
-@media screen and (max-width: 900px) /* Tablette */
+@media screen and (max-width: 900px) and (min-width: 577px) /* Tablette */
 {
     .btnConnexion
     {
@@ -310,6 +334,30 @@ a
     footer
     {
         height: 100px;
+    }
+    .btnDeconnexion
+    {
+        padding: 10px 20px;
+        font-size: 20px;
+        top: 10%;
+        right: 17%;
+        border: white solid 3px;
+    }
+    .btnQuestions
+    {
+       padding: 20px 40px;
+       font-size: 40px;
+       border-radius: 25px;
+       top: 50%;
+       left: 30%;
+    }
+    .btnStatistiques
+    {
+        padding: 20px 40px;
+        font-size: 40px;
+        border-radius: 25px;
+        top: 50%;
+        left: 70%;
     }
 }
 @media screen and (min-width: 900px)  /* PC normal */
@@ -325,6 +373,30 @@ a
     footer
     {
         height: 100px;
+    }
+    .btnDeconnexion
+    {
+        padding: 10px 20px;
+        font-size: 20px;
+        top: 10%;
+        right: 10%;
+        border: white solid 3px;
+    }
+    .btnQuestions
+    {
+       padding: 20px 40px;
+       font-size: 40px;
+       border-radius: 25px;
+       top: 50%;
+       left: 40%;
+    }
+    .btnStatistiques
+    {
+        padding: 20px 40px;
+        font-size: 40px;
+        border-radius: 25px;
+        top: 50%;
+        left: 65%;
     }
 }
 @media screen and (min-width: 1200px)  /* PC Grand */
@@ -352,5 +424,29 @@ a
     body
     {
         font-size: 25px;
+    }
+    .btnDeconnexion
+    {
+        padding: 10px 20px;
+        font-size: 55px;
+        top: 10%;
+        right: 8%;
+        border: white solid 5px;
+    }
+    .btnQuestions
+    {
+       padding: 20px 40px;
+       font-size: 70px;
+       border-radius: 25px;
+       top: 50%;
+       left: 45%;
+    }
+    .btnStatistiques
+    {
+        padding: 20px 40px;
+        font-size: 70px;
+        border-radius: 25px;
+        top: 50%;
+        left: 60%;
     }
 }
