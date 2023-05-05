@@ -8,19 +8,17 @@
      <meta charset="utf-8">
      <meta http-equiv="X-UA-Compatible" content="IE=edge">
      <meta name="description" content="Page de connexion pour les administrateurs du PsychoQuizz">
-     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/main.css">
-     <link rel="stylesheet" type="image/png" href="assets/image/fld.PNG">
-     <link rel="icon" type="image/x-icon" href="assets/images/Logo-FLD.png">
+     <link rel="stylesheet" type="text/css" media="screen" href="../assets/css/main.css">
+     <link rel="stylesheet" type="image/png" href="../assets/css/main.css">
+     <link rel="icon" type="image/x-icon" href="../assets/images/Logo-FLD.png">
   </head>
   <body>
 
-    <!--Création de la banderole du site-->
+    <!-- HEADER -->
 
     <header>
-      <img src="assets/image/fld.png" alt="fld">
-      <h1>&nbsp PsychoQuizz - Administrateur</h1>
+      <img src="../assets/images/Logo-FLD.png" alt="fld">
     </header>
-    <div class="blue-line"></div>
 
     <!--Lien vers le fichier "connexion.php", les données sont collectées grâçe à la méthode POST-->
 
@@ -31,13 +29,19 @@
 
       <div class="container-connexion">
         <label for="id_admin"><h2>Identifiant</h2></label>
-        <input type="text" placeholder="Entrer votre Identifiant" name="id_admin" id="id_admin" required>
+        <input type="text" placeholder="Entrer votre Identifiant" name="id_admin" id="id_admin" class="connexionAdmin" required>
       
         <label for="mdp_admin"><h2>Mot de passe</h2></label>
-        <input type="password" placeholder="Entrer votre mot de passe" name="mdp_admin" id="mdp_admin" required>
+        <input type="password" placeholder="Entrer votre mot de passe" name="mdp_admin" id="mdp_admin" class="connexionAdmin" required>
         <p></p>
-        <button type="submit" name="submit">Connexion</button>
       </div>
+      <button type="submit" name="submit" class="btnConnexion">Connexion</button>
     </form>
-  </body>
+
+    <!-- FOOTER-->
+
+    <footer>
+      © 2023 Copyright: TreizeOrganisé
+  </footer>
+</body>
 </html>
