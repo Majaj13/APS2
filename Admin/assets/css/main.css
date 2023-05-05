@@ -1,0 +1,730 @@
+body 
+{
+    background-color: #1E1E1E;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
+
+header
+{
+    box-sizing: border-box;
+    position:relative;
+    width: 102%;
+    height: 160px;
+    background: #CD7003;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    margin-bottom: 200px;
+}
+
+footer
+{
+    box-sizing: border-box;
+    position: relative;
+    width: 102%;
+    height: 160px;
+    background: #CD7003;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 2px;
+    margin-top: 20%;
+    text-align : center;
+    padding-top: 25px;
+    
+}
+
+header img 
+{
+    display: block;
+    margin: 5px auto 0 20px;
+    max-height: 90%;
+    max-width: 90%;
+}
+
+.btnQuestions 
+{
+    display: inline-block;
+    padding: 20px 40px;
+    background-color: #CD7003;
+    color: #fff;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 25px;
+    margin-left: -15%;
+    margin-bottom: 10%;
+    position: relative;
+    top: 50%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    border : white solid 5px;
+}
+
+.btnStatistiques 
+{
+    display: inline-block;
+    padding: 20px 40px;
+    background-color: #CD7003;
+    color: #fff;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 25px;
+    margin-left: 0%;
+    margin-bottom: 10%;
+    position: relative;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    border : white solid 5px;
+}
+
+.btnQuestions:hover
+{
+    background-color: #f58403;
+}
+
+.btnStatistiques:hover
+{
+    background-color: #f58403;
+}
+
+
+.btnQuestions a
+{
+    color : white;
+    text-decoration: none;
+}
+
+.btnStatistiques a
+{
+    color : white;
+    text-decoration: none;
+}
+
+.btnDeconnexion 
+{
+    display: inline-block;
+    padding: 20px 40px;
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 25px;
+    margin: auto;
+    position: absolute;
+    top: 0%;
+    right: 12%;
+    transform: translate(50%, 30%);
+    border: white solid 5px;
+}
+
+.btnDeconnexion a 
+{
+    color : white;
+    text-decoration: none;
+}
+
+.btnDeconnexion:hover
+{
+    background-color: rgb(26, 26, 26);
+}
+.container-connexion
+{
+    position: relative;
+    margin-bottom: 25px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+	text-align: center;
+}
+
+input[class="connexionAdmin"]
+{
+	height: 35px;
+	width: 300px;
+    border-radius: 10px;
+}
+
+input[class="ajoutQuestion"] {
+    height: 175px;
+    width: 600px;
+    border: 5px solid #FFFFFF;
+    background: #3332325b;
+    color:#FFFFFF;
+}
+
+input[class="ajoutPoints"] {
+    height: 35px;
+    width: 35px;
+    border: 2px solid #FFFFFF;
+    background: #3332325b;
+    color:#FFFFFF;
+}
+
+.box1 {
+    position:absolute;
+    left: 2%;
+    top:400px;
+    font-size:1.4em;
+}
+
+.box2 {
+    position:absolute;
+    left: 2%;
+    bottom: 0%;
+    font-size:1.4em;
+}
+
+.box3 {
+    position:absolute;
+    top:400px;
+    left: 70%;
+    font-size:1.4em;
+}
+
+.box4 {
+    position:unset;
+    margin-left:70%;
+    left: 75%;
+    margin-top:300px;
+}
+
+::placeholder
+{
+	text-align: center;
+}
+
+table
+{
+    border-collapse: collapse;
+    width: 80%;
+    border: solid 1px;
+    position: absolute;
+    top: 50%;
+    left: 42%;
+    transform: translate(-50%, -42%);
+    float: left;
+    display:contents;
+}
+
+th
+{
+    border: solid 1px;
+}
+
+td
+{
+    border: solid 1px;
+    text-align: center;
+}
+
+.titreAdmin h2
+{
+    color: white;
+    stroke: 100% black;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, -70%);
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    top:-120px;
+}
+
+.titreAdmin h3
+{
+    color: white;
+    stroke: 100% black;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, -30%);
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: -1%;
+    top:-120px;
+    
+}
+
+.btnAjoutQuestion
+{
+    display: inline-block;
+    padding: 20px 40px;
+    background-color: #CD7003;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    border : white solid 3px;
+    position: absolute;
+    top: 185px;
+    left: auto;
+}
+
+.btnRetourAccueil
+{
+    display: inline-block;
+    padding: 20px 40px;
+    background-color: #CD7003;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    border : white solid 3px;
+    position: absolute;
+    top: 185px;
+    left: 250px; 
+}
+
+a
+{
+    text-decoration: none;
+}
+
+.btnRetourAccueil img
+{
+    position: absolute;
+    top: 50%;
+    left: 52%;
+    transform: translate(-50%, -50%);
+}
+
+.btnSuppQuestion
+{
+    color: rgb(255, 255, 255);
+    background-color: rgb(255, 0, 0);
+    border-radius: 10px;
+    font-size: 25px;
+    padding: 1px;
+}
+
+.btnModifQuestion
+{
+    color: rgb(255, 255, 255);
+    background-color: rgb(255, 154, 3);
+    border-radius: 10px;
+    font-size: 25px;
+    padding: 1px;
+}
+
+.btnConnexion
+{
+    position: relative;
+    padding: 15px 40px;
+    background-color: #CD7003;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 20px;
+    margin-top: 60px;
+    position: absolute;
+    top: 72%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+    border : white solid 4px;
+    text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+}
+
+.btnConnexion:hover
+{
+    background-color: #f58403;
+}
+
+:root {
+    --form-control-color: orange;
+  }
+
+input[type="radio"].ON {
+    appearance: none;
+  
+    font: inherit;
+    color: currentColor;
+    width: 1.5em;
+    height: 1.5em;
+    border: 0.1em solid currentColor;
+    border-radius: 0%;
+    transform: translateY(-0.075em);
+
+    margin-left: 40px;
+    display: inline-grid;
+  }
+  
+  input[type="radio"].ON::before {
+    content: "";
+    width: 1.3em;
+    height: 1.3em;
+    border-radius: 0%;
+    transform: scale(0);
+    transition: 120ms transform ease-in-out;
+    box-shadow: inset 1.75em 1.5em var(--form-control-color);
+  }
+  
+  input[type="radio"].ON:checked::before {
+    transform: scale(1);
+  }
+
+  .addQuestion {
+    position: relative;
+    width: 300px;
+    height: 90px;
+  
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 38px;
+  
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    
+    box-sizing: border-box;
+    background: #CD7003;
+    border: 5px solid #FFFFFF;
+    border-radius: 2px;
+  
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+
+/* RD - Connexion Admin */
+
+@media screen and (max-width: 576px)   /* TÃ©lÃ©phone */
+{
+    .btnConnexion
+    {
+        margin-top: -150px;
+        font-size: 15px;
+    }
+    header
+    {
+       height: 100px;
+    }
+    footer
+    {
+        height: 100px;
+        margin-top: 60%;
+    }
+    .btnDeconnexion
+    {
+        padding: 10px 20px;
+        font-size: 20px;
+        top: 10px;
+        right: 17%;
+        border: white solid 3px;
+    }
+    .btnQuestions
+    {
+       padding: 20px 40px;
+       font-size: 40px;
+       border-radius: 25px;
+       top: 40%;
+       left: 50%;
+        margin-left: 0%;
+    }
+    .btnStatistiques
+    {
+        padding: 20px 28px;
+        font-size: 40px;
+        border-radius: 25px;
+        top: 55%;
+        left: 50%;
+        margin-left: 0%;
+    }
+    .btnRetourAccueil {
+        top: 400px;
+        left: 41%;
+    }
+    .btnAjoutQuestion {
+        top: 325px;
+        left: 30%;
+    }
+
+    .titreAdmin h3 {
+        left: 55%;
+    }
+    .titreAdmin h2 {
+        left: 55%;
+    }
+    .box1 {
+        position:relative;
+        font-size:1.4em;
+        top:1px;
+        left:30px;
+    }
+
+    .box2 {
+        position:relative;
+        font-size:1.4em;
+        top:50px;
+        left:30px;
+    }
+
+    .box3 {
+        position:relative;
+        left: auto;
+        font-size:1.4em;
+        top:100px;
+        left:30px;
+    }
+
+    .box4 {
+        position:relative;
+        font-size:1.4em;
+        top:-100px;
+        left:-200px;
+    }
+}
+@media screen and (max-width: 900px) and (min-width: 577px) /* Tablette */
+{
+    .btnConnexion
+    {
+        margin-top: -150px;
+        font-size: 15px;
+    }
+    header
+    {
+       height: 100px;
+    }
+    footer
+    {
+        height: 100px;
+        margin-top: 45%;
+    }
+    .btnDeconnexion
+    {
+        padding: 10px 20px;
+        font-size: 20px;
+        top: 10%;
+        right: 17%;
+        border: white solid 3px;
+    }
+    .btnQuestions
+    {
+       padding: 20px 40px;
+       font-size: 40px;
+       border-radius: 25px;
+       top: 50%;
+       left: 30%;
+    }
+    .btnStatistiques
+    {
+        padding: 20px 40px;
+        font-size: 40px;
+        border-radius: 25px;
+        top: 50%;
+        left: 70%;
+    }
+    .btnRetourAccueil {
+        top: 400px;
+        left: 46%;
+    }
+    .btnAjoutQuestion {
+        top: 325px;
+        left: 40%;
+    }
+
+    .titreAdmin h3 {
+        left: 55%;
+    }
+    .titreAdmin h2 {
+        left: 55%;
+    }
+    .box1 {
+        position:relative;
+        font-size:1.4em;
+        top:1px;
+        left:30px;
+    }
+
+    .box2 {
+        position:relative;
+        font-size:1.4em;
+        top:50px;
+        left:30px;
+    }
+
+    .box3 {
+        position:relative;
+        left: auto;
+        font-size:1.4em;
+        top:100px;
+        left:30px;
+    }
+
+    .box4 {
+        position:relative;
+        font-size:1.4em;
+        top:-100px;
+        left:-100px;
+    }
+}
+@media screen and (min-width: 900px)  /* PC normal */
+{
+    .btnConnexion
+    {
+        margin-top: -120px;
+        font-size: 15px;
+    }
+    header
+    {
+       height: 100px;
+    }
+    footer
+    {
+        height: 100px;
+        margin-top: 35%;
+    }
+    .btnDeconnexion
+    {
+        padding: 10px 20px;
+        font-size: 20px;
+        top: 10%;
+        right: 10%;
+        border: white solid 3px;
+        margin-right: 10%;
+        display: center;
+    }
+    .btnQuestions
+    {
+       padding: 20px 40px;
+       font-size: 40px;
+       border-radius: 25px;
+       top: 50%;
+       left: 40%;
+    }
+    .btnStatistiques
+    {
+        padding: 20px 40px;
+        font-size: 40px;
+        border-radius: 25px;
+        top: 50%;
+        left: 65%;
+    }
+
+    .titreAdmin h3 {
+        left: 55%;
+    }
+    .titreAdmin h2 {
+        left: 55%;
+    }
+    .box1 {
+        position:absolute;
+        left: 2%;
+        top:400px;
+        font-size:1.4em;
+    }
+
+    .box2 {
+        position:absolute;
+        left: 2%;
+        bottom: 0%;
+        font-size:1.4em;
+    }
+
+    .box3 {
+        position:absolute;
+        top:400px;
+        left: 70%;
+        font-size:1.4em;
+    }
+
+    .box4 {
+        position:unset;
+        margin-left:70%;
+        left: 75%;
+        margin-top:390px;
+    }
+}
+@media screen and (min-width: 1200px)  /* PC Grand */
+{
+    .btnConnexion
+    {
+        margin-top: 150px;
+        font-size: 35px;
+        top: 66%;
+        left: 50%;
+        transform: translate(-50%, -100%);
+    }
+    header
+    {
+       height: 200px;
+    }
+    footer
+    {
+        height: 200px;
+        margin-top: 10%;
+    }
+    input[class="connexionAdmin"]
+    {
+	   height: 55px;
+	   width: 500px;
+    }
+    body
+    {
+        font-size: 25px;
+    }
+    .btnDeconnexion
+    {
+        padding: 10px 20px;
+        font-size: 55px;
+        right: 8%;
+        border: white solid 5px;
+        margin-right: 10%;
+        display: center;
+    }
+    .btnQuestions
+    {
+       padding: 20px 40px;
+       font-size: 70px;
+       border-radius: 25px;
+       left: 45%;
+    }
+    .btnStatistiques
+    {
+        padding: 20px 40px;
+        font-size: 70px;
+        border-radius: 25px;
+        left: 60%;
+    }
+    .btnRetourAccueil {
+        top: 285px;
+        left: 28%;
+    }
+    .btnAjoutQuestion {
+        top: 285px;
+        left: 2%;
+    }
+
+    .titreAdmin h3 {
+        margin-left: -5%;
+    }
+    .titreAdmin h2 {
+        margin-left: -5%;
+    }
+    .box1 {
+        position:absolute;
+        left: 2%;
+        top:400px;
+        font-size:1.4em;
+    }
+
+    .box2 {
+        position:absolute;
+        left: 2%;
+        bottom: 0%;
+        font-size:1.4em;
+    }
+
+    .box3 {
+        position:absolute;
+        top:400px;
+        left: 70%;
+        font-size:1.4em;
+    }
+
+    .box4 {
+        position:unset;
+        margin-left:70%;
+        left: 75%;
+        margin-top:290px;
+    }
+}

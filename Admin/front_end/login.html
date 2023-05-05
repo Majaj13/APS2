@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<!--Titre de la page, description, utilisation d'unicode, importation du css et des images-->
+
+  <head>
+    <title>Connexion | administrateur</title>
+     <meta charset="utf-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="description" content="Page de connexion pour les administrateurs du PsychoQuizz">
+     <link rel="stylesheet" type="text/css" media="screen" href="../assets/css/main.css">
+     <link rel="stylesheet" type="image/png" href="../assets/css/main.css">
+     <link rel="icon" type="image/x-icon" href="../assets/images/Logo-FLD.png">
+  </head>
+  <body>
+
+    <!-- HEADER -->
+
+    <header>
+      <img src="../assets/images/Logo-FLD.png" alt="fld">
+    </header>
+
+    <!--Lien vers le fichier "connexion.php", les données sont collectées grâçe à la méthode POST-->
+
+    <form action="../back_end/connexion.php" method="POST">
+
+      <!--creation du formulaire de l'administrateur-->
+      <!--L'identifiant et le mot de passe sont collectées sous le nom de "id_admin" et "mdp_admin"-->
+
+      <div class="container-connexion">
+        <label for="id_admin"><h2>Identifiant</h2></label>
+        <input type="text" placeholder="Entrer votre Identifiant" name="id_admin" id="id_admin" class="connexionAdmin" required>
+      
+        <label for="mdp_admin"><h2>Mot de passe</h2></label>
+        <input type="password" placeholder="Entrer votre mot de passe" name="mdp_admin" id="mdp_admin" class="connexionAdmin" required>
+        <p></p>
+      </div>
+      <button type="submit" name="submit" class="btnConnexion">Connexion</button>
+    </form>
+
+    <!-- FOOTER-->
+
+    <footer>
+      © 2023 Copyright: TreizeOrganisé
+  </footer>
+</body>
+</html>
