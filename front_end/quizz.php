@@ -1,24 +1,26 @@
 <!DOCTYPE html>
 <html lang="fr">
     <head>
-        <title>APS2</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" type="image/png" href="../assets/images/Logo-FLD.png" />
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-        <link rel="stylesheet" type="text/css" href="../assets/css/main.css" />
+        <title>PsychoQuizz | Questions</title>
+        <!--META-->
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="author" content="Maël Merrer">
-        <meta name="description" content="Page d'acceuil psychoquiz">
-        <meta name="keywords" content="Acceuil, site, psychoquiz, le goat plassart">
+        <meta name="description" content="Questionnaire afin de déterminer l'option du candidat">
+        <meta name="keywords" content="Questionnaire, quizz, sisr, slam, btssio">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <!--LINK-->
+        <link rel="icon" type="image/png" href="../assets/images/Logo-FLD.png" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../assets/css/main.css" />
+        <!--SCRIPT-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     </head>
     <header>
         <div class = "section1" >
         <img src="../assets/images/Logo-FLD.png" class="img-responsive" alt="">
         </div>
-        <h1> Psychoquiz </h1>
+        <h1> PsychoQuizz </h1>
     </header>
     <body>
 

@@ -28,7 +28,7 @@ try
 
     $cnx->commit();
 
-    header("Location: ../front_end/quiz.php");
+    header("Location: ../front_end/quizz.php");
     exit();
 } 
 catch (Exception $e)   //en cas d'erreur
