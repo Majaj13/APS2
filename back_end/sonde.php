@@ -43,5 +43,4 @@ catch (Exception $e)   //en cas d'erreur
 
 $cnx = null;
 
-var_dump($_SESSION);
 ?>
