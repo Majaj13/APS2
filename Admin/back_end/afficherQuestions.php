@@ -38,4 +38,4 @@ echo "</table>";
 
 <!-- Redirection vers le pop-up js -->
 
-<script type="text/javascript" src="../back_end/javascript/script.js"></script>
+<script type="text/javascript" src="../front_end/javascript/index.js"></script>

@@ -5,3 +5,16 @@ if (confirm("Êtes-vous sûr de vouloir supprimer la question?"))  // L'admin cl
     window.location.href = "../back_end/supprimerQuestions.php?id=" + idquestionSelect; // Le pop up systeme redirige l'admin avec l'idquestion qu'il a selectionné via l'url (window.location)
   }
 }
+
+function hidePassword() //Afficher mdp
+{
+    var x = document.getElementById('mdp_admin');
+    if (x.type === 'password') 
+    {
+      x.type = 'text';
+    } 
+    else 
+    {
+      x.type = 'password';
+    }
+  }

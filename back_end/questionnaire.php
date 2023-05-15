@@ -21,7 +21,7 @@ try
 
     $id_question = $row["IDQUESTION"];
     $libelle_question = $row["LIBELLE"];
-    $max_id =$row["max_id"];
+    $max_id = $row["max_id"];
     $idtype = $row["IDTYPEQUESTION"];
 
     // Choisir le bon type de question Type1/Type2
@@ -29,10 +29,10 @@ try
     if ($idtype == 1)
     {
         $texte = "<label>" . $id_question . " - " . $libelle_question . " ? </label><br>";
-        $texte .= '<input type="radio" href="?id=' . $id_question .  '" id="oui" name="reponse" value="oui" class="ON"/>';
+        $texte .= '<input type="radio" href="?id=' . $id_question .  '" id="REP" name="REP" value="1" class="ON"/>';
         $texte .= '<label class="Gauche"> oui </label>';
         $texte .= "<br>";
-        $texte .= '<input type="radio" href="?id=' . $id_question .  '" id="non" name="reponse" value="non" class="ON"/>';
+        $texte .= '<input type="radio" href="?id=' . $id_question .  '" id="REP" name="REP" value="2" class="ON"/>';
         $texte .= '<label class="Gauche"> non </label>';
     }
     elseif ($idtype == 2) 
@@ -64,6 +64,8 @@ try
         $texte .= '</div>';
         $texte .= '</form>';
    }
+
+
    $cnx->commit();
 }
 catch (Exception $e)   //en cas d'erreur

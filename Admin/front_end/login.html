@@ -11,8 +11,8 @@
      <link rel="stylesheet" type="text/css" media="screen" href="../assets/css/main.css">
      <link rel="stylesheet" type="image/png" href="../assets/css/main.css">
      <link rel="icon" type="image/x-icon" href="../assets/images/Logo-FLD.png">
+     <script type="text/javascript" src="../front_end/javascript/index.js"></script>
   </head>
-  <body>
 
     <!-- HEADER -->
 
@@ -34,6 +34,8 @@
         <label for="mdp_admin"><h2>Mot de passe</h2></label>
         <input type="password" placeholder="Entrer votre mot de passe" name="mdp_admin" id="mdp_admin" class="connexionAdmin" required>
         <p></p>
+        <input type="checkbox" onclick="hidePassword();">
+        <label> Afficher le mot de passe</label>
       </div>
       <button type="submit" name="submit" class="btnConnexion">Connexion</button>
     </form>
