@@ -1,5 +1,12 @@
 <?php
 session_start();
+
+if(!isset($_SESSION['id_admin']))
+{
+  header('Location: ../front_end/login.html');
+  exit();
+}
+
 ?>
 
 <!DOCTYPE html>

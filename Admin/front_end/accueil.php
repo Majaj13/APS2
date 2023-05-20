@@ -31,9 +31,9 @@ session_start();
         }
         else
         {
-          echo "";
+          header('Location: ../front_end/login.html');
+          exit();
         }
-        var_dump($_SESSION); //Deboguer
         ?>
 
     </header>

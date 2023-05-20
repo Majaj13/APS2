@@ -8,13 +8,13 @@ if (confirm("Êtes-vous sûr de vouloir supprimer la question?"))  // L'admin cl
 
 function hidePassword() //Afficher mdp
 {
-    var x = document.getElementById('mdp_admin');
-    if (x.type === 'password') 
+    var voirMDP = document.getElementById('mdp_admin');
+    if (voirMDP.type === 'password') 
     {
-      x.type = 'text';
+      voirMDP.type = 'text';
     } 
     else 
     {
-      x.type = 'password';
+      voirMDP.type = 'password';
     }
   }
