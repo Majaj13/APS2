@@ -7,8 +7,6 @@ require('../back_end/include/_inc_connexion.php');
 
 $id_admin = $_SESSION['id_admin'];  //rester connecter sur id_admin
 
-var_dump($_SESSION);
-
 $query = 'SELECT *        
           FROM question
           ORDER BY  IDQUESTION ASC';   //Sélectionné toutes les colonnes de la table question avec leur contenue
